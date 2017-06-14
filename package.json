@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/pagoru/super-secret-settings/issues"
   },
-  "homepage": "https://github.com/pagoru/super-secret-settings#readme"
+  "homepage": "https://github.com/pagoru/super-secret-settings#readme",
+  "dependencies": {
+    "random-seed": "^0.3.0"
+  }
 }
