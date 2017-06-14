@@ -1,0 +1,19 @@
+{
+  "name": "super-secret-settings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pagoru/super-secret-settings.git"
+  },
+  "author": "pagoru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pagoru/super-secret-settings/issues"
+  },
+  "homepage": "https://github.com/pagoru/super-secret-settings#readme"
+}
