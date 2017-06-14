@@ -14,11 +14,12 @@ const hash = (text) => {
 };
 
 module.exports = class SuperSecretSettings {
+
     constructor(params){
         this._masterPassword = params.masterPassword;
     }
 
-    getMasterPasswordHAsh() {
+    getMasterPasswordHash() {
         return hash(this._masterPassword);
     }
 
@@ -38,4 +39,5 @@ module.exports = class SuperSecretSettings {
         }
         return password;
     }
+
 };
