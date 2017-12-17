@@ -1,6 +1,6 @@
 {
   "name": "super-secret-settings",
-  "version": "1.0.1",
+  "version": "2.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/pagoru/super-secret-settings#readme",
   "dependencies": {
-    "random-seed": "^0.3.0"
+    "random-seed": "0.3.0"
   }
 }
