@@ -5,12 +5,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * Last update 17 Apr 18.
  */
 var randomSeed = require("random-seed");
-var crypto = require("./crypto.min");
+var crypto_min_js_1 = require("./crypto.min.js");
 var characters = "ABCDFGHIJKLMNOPQRSTUVWXYZabdfghijklmnopqrstuvwxyz1234567890";
 function getHash(text) {
-    var shasum = crypto['createHash']('sha512');
+    var shasum = crypto_min_js_1.createHash('sha512');
     shasum.update(text);
-    return shasum.digest('hex', null);
+    return shasum.digest('hex');
 }
 exports.getHash = getHash;
 function getPassword(password, service, length) {

@@ -3,14 +3,14 @@
  * Last update 17 Apr 18.
  */
 import * as randomSeed from 'random-seed';
-import * as crypto from './crypto.min';
+import { createHash } from './crypto.min.js';
 
 const characters = "ABCDFGHIJKLMNOPQRSTUVWXYZabdfghijklmnopqrstuvwxyz1234567890";
 
 export function getHash(text) {
-    let shasum = crypto['createHash']('sha512');
+    let shasum = createHash('sha512');
     shasum.update(text);
-    return shasum.digest('hex', null);
+    return shasum.digest('hex');
 }
 
 export function getPassword(password, service, length = 12) {
