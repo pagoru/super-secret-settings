@@ -38,3 +38,19 @@ export function getPassword(password: string, service: string, length: number = 
 
     return generatedPassword;
 }
+
+/**
+ * Generates a CSS HSL color to easily distinguish between different texts using their colors
+ *
+ * @param text the input text to hash
+ * @param s S parameter of HSL, value between 0 and 100
+ * @param l L parameter of HSL, value between 0 and 100
+ */
+export function getCssColor(text: string, s: number = 75, l: number = 75) {
+    const seed = getHash(text);
+    const random = randomSeed.create(seed);
+    const h = random.intBetween(0, 360);
+
+    // HSL: https://www.w3schools.com/colors/colors_hsl.asp
+    return 'hsl(' + h + ', ' + s + '%, ' + l + '%)';
+}
