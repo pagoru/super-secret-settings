@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/pagoru/super-secret-settings#readme",
   "dependencies": {
-    "hasha": "^5.2.2",
-    "random-seed": "0.3.0"
+    "random-seed": "0.3.0",
+    "sha.js": "^2.4.11"
   },
   "devDependencies": {
     "@types/random-seed": "^0.3.3",

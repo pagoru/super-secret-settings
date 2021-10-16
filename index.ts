@@ -15,8 +15,8 @@ const characters = "ABCDFGHIJKLMNOPQRSTUVWXYZabdfghijklmnopqrstuvwxyz1234567890"
  * @param text
  */
 export function getHash(text) {
-    const hasha = require('hasha');
-    return hasha(text, {encoding: 'hex', algorithm: 'sha512'});
+    const shajs = require('sha.js');
+    return shajs('sha512').update(text).digest('hex');
 }
 
 /**
