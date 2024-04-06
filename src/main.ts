@@ -5,8 +5,8 @@
  * Updated by pagoru on 06 Apr 2024.
  */
 
-import randomSeed from 'npm:random-seed'
-import sha from 'npm:sha.js'
+import randomSeed from 'random-seed'
+import sha from 'sha.js'
 /**
  * Default set of characters for passwords
  */

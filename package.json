@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "bundle": "./node_modules/.bin/esbuild ./mod.ts --bundle --platform=browser --target=chrome58,firefox57,safari11,edge16 --outfile=bundle.js\n"
+  },
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "esbuild": "^0.20.2",
+    "random-seed": "^0.3.0",
+    "sha.js": "^2.4.11"
+  }
+}
